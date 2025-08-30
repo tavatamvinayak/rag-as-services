@@ -146,8 +146,11 @@ export default function Main({ }: any) {
 
                         {/* <!-- Table --> */}
                         <Table RAG_Data={RAG_Data} deleteRAG={deleteRAG} openModal2={openModal2} api_set={api_set} />
+                        
+                        {/* examples */}
+                        <Examples_for_api />
+                        
                         {/* modal form */}
-
                         <Modal isOpen={isModalOpen} onClose={closeModal} getToken={getToken} user={user} totalcheck={totalcheck} />
                         {
                             isModalOpen2 && (
@@ -357,4 +360,23 @@ function Table({ RAG_Data, deleteRAG, openModal2, api_set }: any) {
             </table>
         </div>
     </>)
+}
+
+function Examples_for_api() {
+    return (
+        <>
+            <div className="fetch pt-20 m">
+                <h1 className="font-bold text-2xl mb-4">Examples for API</h1>
+                <div>
+
+                    <p>{process.env.NEXT_PUBLIC_BACKEND_URL_FASTAPI}/chat/{`{Token}`}</p>
+                    <p> body :{`{"question": "string"}`}
+                    </p>
+                </div>
+                <div>
+                    <p>Response :-{` {"answer": answer}`}</p>
+                </div>
+            </div>
+        </>
+    )
 }
