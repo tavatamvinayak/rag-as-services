@@ -5,9 +5,9 @@ const tiers = [
     name: 'Hobby',
     id: 'tier-hobby',
     href: '#',
-    priceMonthly: '$29',
-    description: "The perfect plan if you're just getting started with our product.",
-    features: ['25 products', 'Up to 10,000 subscribers', 'Advanced analytics', '24-hour support response time'],
+    priceMonthly: '$1',
+    description: "The perfect plan if you're just getting started with our application.",
+    features: ['25 features', 'Up to 10,000 subscribers', 'Advanced analytics', '24-hour support response time'],
     featured: false,
   },
   {
@@ -15,13 +15,13 @@ const tiers = [
     id: 'tier-enterprise',
     href: '#',
     priceMonthly: '$99',
-    description: 'Dedicated support and infrastructure for your company.',
+    description: 'Dedicated support and infrastructure for your applications.',
     features: [
-      'Unlimited products',
+      'Unlimited features',
       'Unlimited subscribers',
       'Advanced analytics',
       'Dedicated support representative',
-      'Marketing automations',
+      'tokens automations',
       'Custom integrations',
     ],
     featured: true,
@@ -32,7 +32,7 @@ function classNames(...classes:any) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Pricing() {
   return (
     <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div aria-hidden="true" className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl">

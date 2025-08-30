@@ -9,8 +9,7 @@ export default function Example() {
               Boost your productivity. Start using our app today.
             </h2>
             <p className="mt-6 text-lg/8 text-pretty ">
-              Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.
-            </p>
+             best for rag base chatbot and boosting you customers            </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
                 href="#"
@@ -25,15 +24,13 @@ export default function Example() {
               </a>
             </div>
           </div>
-          <div className="relative mt-16 h-80 lg:mt-8">
-            <img
-              alt="App screenshot"
-              src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
-              width={1824}
-              height={1080}
-              className="absolute top-0 left-0 w-228 max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-            />
-          </div>
+          <div className="relative mt-16 lg:mt-8">
+  <img
+    alt="App screenshot"
+    src="https://admin.bentoml.com/uploads/medium_simple_rag_workflow_091648ef39.png"
+    className="w-full rounded-md bg-white/5 ring-1 ring-white/10"
+  />
+</div>
         </div>
       </div>
     </div>

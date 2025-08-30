@@ -16,9 +16,9 @@ const ChatMessage = ({ message, isBot }: any) => {
     );
 };
 
-export default function Chatbot({ chat, messages, setMessages, input, setInput ,onClose}: any) {
+export default function Chatbot({ chat, messages, input, setInput ,onClose}: any) {
 
-  const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(false)
     const messagesEndRef = useRef<any>(null);
 
     const scrollToBottom = () => {
@@ -29,7 +29,7 @@ export default function Chatbot({ chat, messages, setMessages, input, setInput ,
         scrollToBottom();
     }, [messages]);
 
-   const handleSendMessage = () => {
+    const handleSendMessage = () => {
         setLoading(true)
         if (input.trim() === '') return; // If input is empty, do nothing
         chat().then(()=>{
@@ -68,7 +68,7 @@ export default function Chatbot({ chat, messages, setMessages, input, setInput ,
                                 className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 placeholder="Type your message..."
                             />
-                           {
+                            {
                                 loading ? (<>
                                 <button
                                
@@ -83,6 +83,7 @@ export default function Chatbot({ chat, messages, setMessages, input, setInput ,
                             </button></>)
                             
                             }
+                            
                         </div>
                     </div>
                 </div>

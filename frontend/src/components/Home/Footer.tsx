@@ -1,4 +1,4 @@
-export default function Footer({}:any) {
+export default function Footer() {
     return(
         <>
 <footer className="bg-white">

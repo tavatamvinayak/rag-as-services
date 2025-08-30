@@ -1,7 +1,7 @@
 export default function FAQ_s() {
     return (
         <div className="px-8">
-            <h2 className="text-3xl sm:text-5xl font-bold pb-8">FAQ's</h2>
+            <h2 className="text-3xl sm:text-5xl font-bold pb-8">{`FAQ's`}</h2>
             <div className="space-y-4">
                 <details className="group [&_summary::-webkit-details-marker]:hidden" open>
                     <summary

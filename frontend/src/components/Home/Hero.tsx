@@ -1,10 +1,3 @@
-'use client'
-
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-
-
 
 export default function Example() {
 
@@ -38,8 +31,7 @@ export default function Example() {
               Data to enrich your online business
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat.
+              helps your application users can chat with your application related.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

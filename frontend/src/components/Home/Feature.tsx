@@ -4,25 +4,25 @@ const features = [
   {
     name: 'Push to deploy',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+      'easy to add your application api chatbot',
     icon: CloudArrowUpIcon,
   },
   {
     name: 'SSL certificates',
     description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+      'secure for apis providing with any thing',
     icon: LockClosedIcon,
   },
   {
     name: 'Simple queues',
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+      'RAG base chat bot working ',
     icon: ArrowPathIcon,
   },
   {
-    name: 'Advanced security',
+    name: 'RAG Advanced security',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+      'yes every thing you need a best security and privacy api chat bot',
     icon: FingerPrintIcon,
   },
 ]
@@ -34,11 +34,10 @@ export default function Example() {
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
           <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
-            Everything you need to deploy your app
+            Everything you need  easy to deploy your application to chat
           </p>
           <p className="mt-6 text-lg/8 text-gray-700">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+            {`we are provided to easy to integrations with api providing today's`}
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">

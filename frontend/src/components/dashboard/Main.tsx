@@ -4,8 +4,9 @@ import React, { useEffect, useState } from "react";
 import { BACKEND_URL_NODEJS } from "@/constant/clints";
 import { BACKEND_URL_FASTAPI } from "@/constant/clints";
 import Chatbot from "@/components/dashboard/Chatbot";
+import { Token } from "@clerk/nextjs/server";
 
-export default function Main({ }: any) {
+export default function Main() {
     const [isModalOpen, setIsModalOpen] = React.useState(false);
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
@@ -131,7 +132,7 @@ export default function Main({ }: any) {
                         {/* <!-- Stats Cards --> */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                             <div className="bg-white p-6 rounded-lg shadow">
-                                <h3 className="text-lg font-semibold">Total RAG API's</h3>
+                                <h3 className="text-lg font-semibold">{`Total RAG API's`}</h3>
                                 <p className="text-3xl font-bold text-blue-600">{totalRagApi || '0'}</p>
                             </div>
                             <div className="bg-white p-6 rounded-lg shadow">
@@ -139,17 +140,16 @@ export default function Main({ }: any) {
                                 <p className="text-3xl font-bold text-green-600">{totalSpendTokens || '0'}</p>
                             </div>
                             <div className="bg-white p-6 rounded-lg shadow">
-                                <h3 className="text-lg font-semibold">Total Requests For API's</h3>
+                                <h3 className="text-lg font-semibold">{`Total Requests For API's`}</h3>
                                 <p className="text-3xl font-bold text-purple-600">{totalRequestsForApi || '0'}</p>
                             </div>
                         </div>
 
                         {/* <!-- Table --> */}
                         <Table RAG_Data={RAG_Data} deleteRAG={deleteRAG} openModal2={openModal2} api_set={api_set} />
-                        
+
                         {/* examples */}
                         <Examples_for_api />
-                        
                         {/* modal form */}
                         <Modal isOpen={isModalOpen} onClose={closeModal} getToken={getToken} user={user} totalcheck={totalcheck} />
                         {
